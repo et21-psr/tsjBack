@@ -1,7 +1,7 @@
 "use strict";
 
 module.exports = function(sequelize, DataTypes) {
-  var maniquí = sequelize.define("maniquí", {
+  var maniquí = sequelize.define("maniqui", {
     id_maniquí: {
       type: DataTypes.INTEGER,
          autoIncrement: true,
@@ -18,7 +18,7 @@ module.exports = function(sequelize, DataTypes) {
     }
     
   }, { freezeTableName: true,
-  tableName: 'maniquí'});
+  tableName: 'maniqui'});
 
 
 

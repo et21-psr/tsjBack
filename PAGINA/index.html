@@ -1,12 +1,68 @@
 <html>
-
+   
 <head>
 
-    <title>Hola</title>
+    <title>TP</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
 </head>
 
-<body>
-    <h1>suodhgpaouhga</h1>
-<p>12345</p>
+<h1><center>Hype Best</center></h1>
+<style>
+
+  
+  </style>
+<style>
+  body {background-color: rgb(176, 230, 183);}
+  h1   
+  {color: rgb(0, 17, 255);
+  font-family: verdana;
+  font-size: 150%;}
+  
+  </style>
+
+<body background="Fondo.jpg">
+  <h1>Estilos y Ropa</h1>
+  <p>¿Te gusta la ropa? utiliza esta pagina y muestra tu estilo a los demas.</p>
+  
+    <form id="formsocio">
+
+        Ingresar Email:
+        <input id="email" type="email">
+        <p>Ingresar Contraseña:
+        <input id="contraseña" type="password"></p>
+        <input type="submit" value="Ingresar">
+        
+        
+
+      </form>
+     
 </body>
+<form id="formlogear">
+¿No tenes cuenta?<br>
+<a href="logear.html" > Crear</a>
+</form>
+
 </html>
+<script>
+  $( "#formsocio" ).submit(function( event ) {
+
+// Stop form from submitting normally
+event.preventDefault();
+console.log("hola")
+email=$( "#email" ).val()
+console.log(email)
+contraseña=$( "#contraseña" ).val()
+console.log(contraseña)
+$.post( "test.php", { 'choices[]': [ "Jon", "Susan" ] } );
+
+});
+  </script>
+  <script type="text/javascript">
+    $("#formcrearcuenta").submit(function() {
+        $("#formcrearce").attr('target', '_blank');
+        return true;
+    });
+    </script>
